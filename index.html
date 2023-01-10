@@ -14641,7 +14641,18 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Curso-Entornos-de-python-+-xarray">Curso Entornos de python + xarray<a class="anchor-link" href="#Curso-Entornos-de-python-+-xarray">&#182;</a></h1>
+<h1 id="Introducci%C3%B3n-a-librer%C3%ADas-de-DataScience-en-Python:-XArray-y-datos-CMEMS">Introducci&#243;n a librer&#237;as de DataScience en Python: XArray y datos CMEMS<a class="anchor-link" href="#Introducci%C3%B3n-a-librer%C3%ADas-de-DataScience-en-Python:-XArray-y-datos-CMEMS">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Contenido">Contenido<a class="anchor-link" href="#Contenido">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -14653,7 +14664,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Contenido">Contenido<a class="anchor-link" href="#Contenido">&#182;</a></h1><ul>
+<ul>
 <li><a href="#Objetivos">Objetivos</a></li>
 <li><a href="#Entornos-virtuales">Entornos virtuales</a><ul>
 <li><a href="#Crear-un-entorno-virtual-con-conda">Crear un entorno virtual con conda</a></li>
@@ -14748,7 +14759,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>Lo primero que necesitaremos es instalar la distribución de lenguajes 
-  Anaconda que incluye el gestor de paquetes conda, o Miniconda (un instalador mínimo de conda).</li>
+  <a href="https://www.anaconda.com/">Anaconda</a> que incluye el gestor de paquetes conda, o <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> (un instalador mínimo de conda).</li>
 </ul>
 <ul>
 <li>Una vez instalado Anaconda o Miniconda, tenemos que abrir el prompt y dirigirnos al directorio en donde vamos a trabajar.</li>
@@ -14991,7 +15002,7 @@ Para crear un notebook con anaconda puedes seguir los siguientes pasos:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Primero nos conectaremos a CMEMS y accederemos a ciertos datos. Para esto, necesitamos un perfil en <a href="https://marine.copernicus.eu/es">CMEMS</a> con nombre de usuario y password y el link de acceso a los <a href="https://data.marine.copernicus.eu/product/IBI_MULTIYEAR_WAV_005_006/description">datos</a>,</p>
+<p>Primero nos conectaremos a <a href="https://marine.copernicus.eu/es">CMEMS</a> y accederemos a ciertos <a href="https://data.marine.copernicus.eu/product/IBI_MULTIYEAR_WAV_005_006/description">datos</a>. Para esto, necesitamos un perfil en CMEMS con nombre de usuario y password y el link de acceso a los datos,</p>
 
 </div>
 </div>
@@ -15117,7 +15128,7 @@ Accediendo a los datos
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>El data set contiene múltiples arrays multidimensionales (variables) y metadata.</p>
+<p>El data set contiene coordenadas (latidu, longitud y tiempo), múltiples arrays multidimensionales (variables), etiquetas y atributos.</p>
 
 </div>
 </div>
@@ -15127,7 +15138,7 @@ Accediendo a los datos
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ds</span>
@@ -15148,7 +15159,7 @@ Accediendo a los datos
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -15537,10 +15548,10 @@ Attributes: (12/19)
     z_min:          0.0f
     z_max:          0.0f
     contact:        mailto: servicedesk.cmems@mercator-ocean.eu
-    source:         IBI-MFC (Operational Production Center)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-74f2a467-2cd2-41d4-b60a-63b1ac226840' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-74f2a467-2cd2-41d4-b60a-63b1ac226840' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>latitude</span>: 601</li><li><span class='xr-has-index'>longitude</span>: 481</li><li><span class='xr-has-index'>time</span>: 254184</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-e5b3ea90-9760-4bbe-af82-cb70842279c5' class='xr-section-summary-in' type='checkbox'  checked><label for='section-e5b3ea90-9760-4bbe-af82-cb70842279c5' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>26.0 26.05 26.1 ... 55.9 55.95 56.0</div><input id='attrs-50daf26a-0a7c-441f-b4cb-d1ab97f038bc' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-50daf26a-0a7c-441f-b4cb-d1ab97f038bc' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0aae2e47-e51f-48be-af05-4f776306e89c' class='xr-var-data-in' type='checkbox'><label for='data-0aae2e47-e51f-48be-af05-4f776306e89c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div><div class='xr-var-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-19.0 -18.95 -18.9 ... 4.9 4.95 5.0</div><input id='attrs-afb0dc6d-4896-4130-ae76-7cb1b372f670' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-afb0dc6d-4896-4130-ae76-7cb1b372f670' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0130855f-c478-477f-9e5e-a9b4f1a4ae44' class='xr-var-data-in' type='checkbox'><label for='data-0130855f-c478-477f-9e5e-a9b4f1a4ae44' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>longitude</dd><dt><span>long_name :</span></dt><dd>Longitude</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>unit_long :</span></dt><dd>Degrees East</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lon</dd><dt><span>_ChunkSizes :</span></dt><dd>481</dd></dl></div><div class='xr-var-data'><pre>array([-19.  , -18.95, -18.9 , ...,   4.9 ,   4.95,   5.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1993-01-01 ... 2021-12-30T23:00:00</div><input id='attrs-a618fb2a-7cd9-41bd-bd69-1226a368facf' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a618fb2a-7cd9-41bd-bd69-1226a368facf' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-706fb900-9248-4f78-bebc-85f17d1425b6' class='xr-var-data-in' type='checkbox'><label for='data-706fb900-9248-4f78-bebc-85f17d1425b6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>axis :</span></dt><dd>T</dd><dt><span>long_name :</span></dt><dd>time</dd><dt><span>standard_name :</span></dt><dd>time</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Time</dd><dt><span>_ChunkSizes :</span></dt><dd>24</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1993-01-01T00:00:00.000000000&#x27;, &#x27;1993-01-01T01:00:00.000000000&#x27;,
+    source:         IBI-MFC (Operational Production Center)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-e694ebb5-c7b6-4cbf-9826-adecadc16fdd' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e694ebb5-c7b6-4cbf-9826-adecadc16fdd' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>latitude</span>: 601</li><li><span class='xr-has-index'>longitude</span>: 481</li><li><span class='xr-has-index'>time</span>: 254184</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-cec461c6-57fe-4ca0-accd-d1463dae49d2' class='xr-section-summary-in' type='checkbox'  checked><label for='section-cec461c6-57fe-4ca0-accd-d1463dae49d2' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>26.0 26.05 26.1 ... 55.9 55.95 56.0</div><input id='attrs-a1097e73-387c-4217-9ca9-137deaa04fa9' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a1097e73-387c-4217-9ca9-137deaa04fa9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8789dea7-5403-4b4e-8e3b-995d156ee0b5' class='xr-var-data-in' type='checkbox'><label for='data-8789dea7-5403-4b4e-8e3b-995d156ee0b5' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div><div class='xr-var-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-19.0 -18.95 -18.9 ... 4.9 4.95 5.0</div><input id='attrs-f39b6b2c-9097-4bce-8ddc-84feaef64011' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f39b6b2c-9097-4bce-8ddc-84feaef64011' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-14c861f5-9e5f-4b85-9d98-b432d1aabad4' class='xr-var-data-in' type='checkbox'><label for='data-14c861f5-9e5f-4b85-9d98-b432d1aabad4' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>longitude</dd><dt><span>long_name :</span></dt><dd>Longitude</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>unit_long :</span></dt><dd>Degrees East</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lon</dd><dt><span>_ChunkSizes :</span></dt><dd>481</dd></dl></div><div class='xr-var-data'><pre>array([-19.  , -18.95, -18.9 , ...,   4.9 ,   4.95,   5.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1993-01-01 ... 2021-12-30T23:00:00</div><input id='attrs-8f41b852-725a-42b1-9972-9f073a96310e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-8f41b852-725a-42b1-9972-9f073a96310e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e0c128a4-7d98-4465-a770-bf2d52e229a5' class='xr-var-data-in' type='checkbox'><label for='data-e0c128a4-7d98-4465-a770-bf2d52e229a5' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>axis :</span></dt><dd>T</dd><dt><span>long_name :</span></dt><dd>time</dd><dt><span>standard_name :</span></dt><dd>time</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Time</dd><dt><span>_ChunkSizes :</span></dt><dd>24</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1993-01-01T00:00:00.000000000&#x27;, &#x27;1993-01-01T01:00:00.000000000&#x27;,
        &#x27;1993-01-01T02:00:00.000000000&#x27;, ..., &#x27;2021-12-30T21:00:00.000000000&#x27;,
        &#x27;2021-12-30T22:00:00.000000000&#x27;, &#x27;2021-12-30T23:00:00.000000000&#x27;],
-      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-f92ef512-2732-4a85-87e5-cfbfa3056405' class='xr-section-summary-in' type='checkbox'  ><label for='section-f92ef512-2732-4a85-87e5-cfbfa3056405' class='xr-section-summary' >Data variables: <span>(17)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>VHM0</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-08f5153e-5857-4133-81a0-63ec0b2048cb' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-08f5153e-5857-4133-81a0-63ec0b2048cb' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-687f0cab-3ef9-488a-ab18-c3ab1df5680b' class='xr-var-data-in' type='checkbox'><label for='data-687f0cab-3ef9-488a-ab18-c3ab1df5680b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant wave height (Hm0)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>100</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VHM0_SW1</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-1a63f990-8f99-4d0b-a760-801eae79d8a8' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-1a63f990-8f99-4d0b-a760-801eae79d8a8' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8b3c6d14-a2e9-4121-af37-c3b33a2032e7' class='xr-var-data-in' type='checkbox'><label for='data-8b3c6d14-a2e9-4121-af37-c3b33a2032e7' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_primary_swell_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant primary swell wave height</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>202</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VHM0_SW2</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-870d37d2-a217-4aee-9604-d990d18f142e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-870d37d2-a217-4aee-9604-d990d18f142e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-26a08f94-b4f4-4666-b9a9-f26be92295b4' class='xr-var-data-in' type='checkbox'><label for='data-26a08f94-b4f4-4666-b9a9-f26be92295b4' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_secondary_swell_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant secondary swell wave height</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>203</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VHM0_WW</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-8c5b9b5f-545b-4177-8cfd-1e29e707ac16' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-8c5b9b5f-545b-4177-8cfd-1e29e707ac16' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-c2512ee6-1a0f-4fb5-b5d5-8c4de9f02445' class='xr-var-data-in' type='checkbox'><label for='data-c2512ee6-1a0f-4fb5-b5d5-8c4de9f02445' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wind_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant wind wave height</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>102</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VMDR</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-41d6c757-0522-48fb-8909-5a6ab8ceeff2' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-41d6c757-0522-48fb-8909-5a6ab8ceeff2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a5283f17-29bb-47e7-a722-d4583d3219c0' class='xr-var-data-in' type='checkbox'><label for='data-a5283f17-29bb-47e7-a722-d4583d3219c0' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_from_direction</dd><dt><span>long_name :</span></dt><dd>Mean wave direction from(Mdir)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>200</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VMDR_SW1</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-fb163e4e-268c-49e1-9f70-7aae57e14557' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-fb163e4e-268c-49e1-9f70-7aae57e14557' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-11331119-9f24-4eac-82a6-d2a8810e5aa4' class='xr-var-data-in' type='checkbox'><label for='data-11331119-9f24-4eac-82a6-d2a8810e5aa4' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_primary_swell_wave_from_direction</dd><dt><span>long_name :</span></dt><dd>Mean primary swell wave direction from</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>107</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VMDR_SW2</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-95988a54-7d10-47cf-9e95-c9994a0b6f74' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-95988a54-7d10-47cf-9e95-c9994a0b6f74' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-32fa8740-cc5c-40f0-a390-503657823414' class='xr-var-data-in' type='checkbox'><label for='data-32fa8740-cc5c-40f0-a390-503657823414' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_secondary_swell_wave_from_direction</dd><dt><span>long_name :</span></dt><dd>Mean secondary swell wave direction from</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>109</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VMDR_WW</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-51b5225e-59d8-458d-a6fe-befc60b7760e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-51b5225e-59d8-458d-a6fe-befc60b7760e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-991b597c-c23d-4fbe-ac2c-8075d830ae3d' class='xr-var-data-in' type='checkbox'><label for='data-991b597c-c23d-4fbe-ac2c-8075d830ae3d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wind_wave_from_direction</dd><dt><span>long_name :</span></dt><dd>Mean wind wave direction from</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>101</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VPED</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-d3056ab8-ad15-4999-ae76-86c7f8f54484' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-d3056ab8-ad15-4999-ae76-86c7f8f54484' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-713a92ab-1e5e-42cf-a086-8488f984b076' class='xr-var-data-in' type='checkbox'><label for='data-713a92ab-1e5e-42cf-a086-8488f984b076' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_from_direction_at_variance_spectral_density_maximum</dd><dt><span>long_name :</span></dt><dd>Wave principal direction at spectral peak</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>999</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VSDX</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-33f64f45-e1e9-4dbf-92df-e901d8d800a9' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-33f64f45-e1e9-4dbf-92df-e901d8d800a9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b2a73835-b03a-4435-ba92-140cee48c017' class='xr-var-data-in' type='checkbox'><label for='data-b2a73835-b03a-4435-ba92-140cee48c017' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m s-1</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_stokes_drift_x_velocity</dd><dt><span>long_name :</span></dt><dd>Stokes drift U</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>215</dd><dt><span>valid_min :</span></dt><dd>-500</dd><dt><span>valid_max :</span></dt><dd>500</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VSDY</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-82cfa0f7-3d59-41b1-a854-10d2b534fe27' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-82cfa0f7-3d59-41b1-a854-10d2b534fe27' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4487e35b-594d-4dc8-ad5f-e4e25751b81e' class='xr-var-data-in' type='checkbox'><label for='data-4487e35b-594d-4dc8-ad5f-e4e25751b81e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m s-1</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_stokes_drift_y_velocity</dd><dt><span>long_name :</span></dt><dd>Stokes drift V</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>216</dd><dt><span>valid_min :</span></dt><dd>-500</dd><dt><span>valid_max :</span></dt><dd>500</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM01_SW1</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-a5bd59a9-fc9d-46b4-88d9-1d60312aad84' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a5bd59a9-fc9d-46b4-88d9-1d60312aad84' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1f9da80b-9b86-41da-b45f-c694dd4a2200' class='xr-var-data-in' type='checkbox'><label for='data-1f9da80b-9b86-41da-b45f-c694dd4a2200' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_primary_swell_wave_mean_period</dd><dt><span>long_name :</span></dt><dd>Spectral moments(0,1)primary swell wave period</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>226</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM01_SW2</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-cbb9a542-8594-42be-828a-834563b9d754' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-cbb9a542-8594-42be-828a-834563b9d754' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-5782868e-bf93-4795-9c16-a4a111e425db' class='xr-var-data-in' type='checkbox'><label for='data-5782868e-bf93-4795-9c16-a4a111e425db' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_secondary_swell_wave_mean_period</dd><dt><span>long_name :</span></dt><dd>Spectral moments(0,1)secondary swell wave period</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>227</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM01_WW</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-9c4c8e7b-f948-4e63-9c1c-cc6b1054b479' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-9c4c8e7b-f948-4e63-9c1c-cc6b1054b479' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4d986783-b3d6-4983-9fe6-b5887e8849ef' class='xr-var-data-in' type='checkbox'><label for='data-4d986783-b3d6-4983-9fe6-b5887e8849ef' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wind_wave_mean_period</dd><dt><span>long_name :</span></dt><dd>Spectral moments(0,1)wind wave period</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>223</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM02</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-c998b97f-fb53-459d-a4a2-fdcd9965c8ff' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-c998b97f-fb53-459d-a4a2-fdcd9965c8ff' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-d0f658c3-7bf6-41da-b0e8-f4d83ecbe548' class='xr-var-data-in' type='checkbox'><label for='data-d0f658c3-7bf6-41da-b0e8-f4d83ecbe548' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment</dd><dt><span>long_name :</span></dt><dd>Spectral moments(0,2)wave period(Tm02)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>221</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM10</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-19593449-a277-4b41-80a9-f223a623fc1e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-19593449-a277-4b41-80a9-f223a623fc1e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6f5cfb14-9bfe-41b3-bb4c-9ccb56a53a59' class='xr-var-data-in' type='checkbox'><label for='data-6f5cfb14-9bfe-41b3-bb4c-9ccb56a53a59' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment</dd><dt><span>long_name :</span></dt><dd>Spectral moments(-1,0)wave period(Tm-10)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>201</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTPK</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-4a37ef16-2db5-4d17-80c6-2c66f9e9dc6a' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-4a37ef16-2db5-4d17-80c6-2c66f9e9dc6a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-c82ea6a4-f77b-421a-9036-ab4b818cea24' class='xr-var-data-in' type='checkbox'><label for='data-c82ea6a4-f77b-421a-9036-ab4b818cea24' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_period_at_variance_spectral_density_maximum</dd><dt><span>long_name :</span></dt><dd>Wave period at spectral peak/peak period(Tp)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>204</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-b554b481-087a-4f72-981a-594b2a6a62e5' class='xr-section-summary-in' type='checkbox'  ><label for='section-b554b481-087a-4f72-981a-594b2a6a62e5' class='xr-section-summary' >Attributes: <span>(19)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Conventions :</span></dt><dd>CF-1.0</dd><dt><span>institution :</span></dt><dd>Nologin-Puertos del Estado-MeteoFrance</dd><dt><span>title :</span></dt><dd>CMEMS IBI MULTI-YEAR REANALYSIS: HOURLY WAVE PRODUCTS</dd><dt><span>easting :</span></dt><dd>longitude</dd><dt><span>northing :</span></dt><dd>latitude</dd><dt><span>references :</span></dt><dd>http://marine.copernicus.eu/</dd><dt><span>domain_name :</span></dt><dd>IBI20</dd><dt><span>field_type :</span></dt><dd>instantaneous</dd><dt><span>field_date :</span></dt><dd>20211230</dd><dt><span>bulletin_date :</span></dt><dd>2020-12-01</dd><dt><span>bulletin_type :</span></dt><dd>Reanalysis</dd><dt><span>longitude_min :</span></dt><dd>-19.f</dd><dt><span>longitude_max :</span></dt><dd>5.f</dd><dt><span>latitude_min :</span></dt><dd>26.f</dd><dt><span>latitude_max :</span></dt><dd>56.f</dd><dt><span>z_min :</span></dt><dd>0.0f</dd><dt><span>z_max :</span></dt><dd>0.0f</dd><dt><span>contact :</span></dt><dd>mailto: servicedesk.cmems@mercator-ocean.eu</dd><dt><span>source :</span></dt><dd>IBI-MFC (Operational Production Center)</dd></dl></div></li></ul></div></div>
+      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-bebd1360-632e-4d5c-b1f1-e0f295e39380' class='xr-section-summary-in' type='checkbox'  ><label for='section-bebd1360-632e-4d5c-b1f1-e0f295e39380' class='xr-section-summary' >Data variables: <span>(17)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>VHM0</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-3530975a-ecdd-4156-8ff7-968a5689b9a2' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-3530975a-ecdd-4156-8ff7-968a5689b9a2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-bb0414ca-a193-4185-84ff-5a77e0037e1a' class='xr-var-data-in' type='checkbox'><label for='data-bb0414ca-a193-4185-84ff-5a77e0037e1a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant wave height (Hm0)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>100</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VHM0_SW1</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-0901d69c-dcf9-41df-8721-33bd975fec40' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-0901d69c-dcf9-41df-8721-33bd975fec40' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9129d8c0-4bce-4ad1-bee4-828f5847e35d' class='xr-var-data-in' type='checkbox'><label for='data-9129d8c0-4bce-4ad1-bee4-828f5847e35d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_primary_swell_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant primary swell wave height</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>202</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VHM0_SW2</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-31d7c3b4-4cc4-4752-be6d-a3ce3fb2ba7f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-31d7c3b4-4cc4-4752-be6d-a3ce3fb2ba7f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-41e3884c-543e-4af2-850a-0eae4c196784' class='xr-var-data-in' type='checkbox'><label for='data-41e3884c-543e-4af2-850a-0eae4c196784' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_secondary_swell_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant secondary swell wave height</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>203</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VHM0_WW</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-702d4aed-5ae5-4005-8fbc-4a4a7698f2be' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-702d4aed-5ae5-4005-8fbc-4a4a7698f2be' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-bd822bfc-a936-4555-88b5-286a1c4253a0' class='xr-var-data-in' type='checkbox'><label for='data-bd822bfc-a936-4555-88b5-286a1c4253a0' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wind_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant wind wave height</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>102</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VMDR</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-46c6e6c2-8afd-42c0-8ed0-2fb6fade8143' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-46c6e6c2-8afd-42c0-8ed0-2fb6fade8143' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ff258fe9-a2bd-4783-bb33-6743635a0dbb' class='xr-var-data-in' type='checkbox'><label for='data-ff258fe9-a2bd-4783-bb33-6743635a0dbb' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_from_direction</dd><dt><span>long_name :</span></dt><dd>Mean wave direction from(Mdir)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>200</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VMDR_SW1</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-aa5e73cc-d577-4df8-a102-c0c8eb745a3c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-aa5e73cc-d577-4df8-a102-c0c8eb745a3c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3147408f-504b-4257-9a50-2b46a7785e26' class='xr-var-data-in' type='checkbox'><label for='data-3147408f-504b-4257-9a50-2b46a7785e26' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_primary_swell_wave_from_direction</dd><dt><span>long_name :</span></dt><dd>Mean primary swell wave direction from</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>107</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VMDR_SW2</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-d47a6add-65b2-43b5-8251-badb09b2956d' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-d47a6add-65b2-43b5-8251-badb09b2956d' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-2561c1ed-f4a2-45a5-ad75-af49ec6d252d' class='xr-var-data-in' type='checkbox'><label for='data-2561c1ed-f4a2-45a5-ad75-af49ec6d252d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_secondary_swell_wave_from_direction</dd><dt><span>long_name :</span></dt><dd>Mean secondary swell wave direction from</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>109</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VMDR_WW</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-e9bcf544-17af-42ff-845c-44226baeec74' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e9bcf544-17af-42ff-845c-44226baeec74' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-88d7be55-260c-44fd-a7c4-f60739674e35' class='xr-var-data-in' type='checkbox'><label for='data-88d7be55-260c-44fd-a7c4-f60739674e35' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wind_wave_from_direction</dd><dt><span>long_name :</span></dt><dd>Mean wind wave direction from</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>101</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VPED</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-296e94a6-3786-4c65-b951-ac1518e6e283' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-296e94a6-3786-4c65-b951-ac1518e6e283' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-82f11a0f-daf7-47ff-808d-ad193d86e94c' class='xr-var-data-in' type='checkbox'><label for='data-82f11a0f-daf7-47ff-808d-ad193d86e94c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_from_direction_at_variance_spectral_density_maximum</dd><dt><span>long_name :</span></dt><dd>Wave principal direction at spectral peak</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>999</dd><dt><span>valid_min :</span></dt><dd>-18000</dd><dt><span>valid_max :</span></dt><dd>18000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VSDX</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-dc294475-6d3c-4f94-a635-27c69fbcdb08' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-dc294475-6d3c-4f94-a635-27c69fbcdb08' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3684bab0-e937-4301-ad72-00f9c3271cfd' class='xr-var-data-in' type='checkbox'><label for='data-3684bab0-e937-4301-ad72-00f9c3271cfd' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m s-1</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_stokes_drift_x_velocity</dd><dt><span>long_name :</span></dt><dd>Stokes drift U</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>215</dd><dt><span>valid_min :</span></dt><dd>-500</dd><dt><span>valid_max :</span></dt><dd>500</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VSDY</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-f45f9756-117b-4b68-825e-b4cbdec3ad54' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f45f9756-117b-4b68-825e-b4cbdec3ad54' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a1e40d65-3ca8-4c5b-a73a-ac7eefa9b0ef' class='xr-var-data-in' type='checkbox'><label for='data-a1e40d65-3ca8-4c5b-a73a-ac7eefa9b0ef' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m s-1</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_stokes_drift_y_velocity</dd><dt><span>long_name :</span></dt><dd>Stokes drift V</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>216</dd><dt><span>valid_min :</span></dt><dd>-500</dd><dt><span>valid_max :</span></dt><dd>500</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM01_SW1</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-b4dfefef-6681-468b-b6a2-40639380bc11' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b4dfefef-6681-468b-b6a2-40639380bc11' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f2e204fc-d2fc-457b-a232-1b97a72284f1' class='xr-var-data-in' type='checkbox'><label for='data-f2e204fc-d2fc-457b-a232-1b97a72284f1' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_primary_swell_wave_mean_period</dd><dt><span>long_name :</span></dt><dd>Spectral moments(0,1)primary swell wave period</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>226</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM01_SW2</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-f2dfc000-98b7-4c78-85bf-f96531b426c6' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f2dfc000-98b7-4c78-85bf-f96531b426c6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9b0b99b8-6519-416c-af5c-186d5eecb539' class='xr-var-data-in' type='checkbox'><label for='data-9b0b99b8-6519-416c-af5c-186d5eecb539' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_secondary_swell_wave_mean_period</dd><dt><span>long_name :</span></dt><dd>Spectral moments(0,1)secondary swell wave period</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>227</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM01_WW</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-5a372c4c-3569-41e9-a57e-59ef1dccf7bc' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-5a372c4c-3569-41e9-a57e-59ef1dccf7bc' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-d1e10940-96b9-4a3f-9002-656c453fc248' class='xr-var-data-in' type='checkbox'><label for='data-d1e10940-96b9-4a3f-9002-656c453fc248' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wind_wave_mean_period</dd><dt><span>long_name :</span></dt><dd>Spectral moments(0,1)wind wave period</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>223</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM02</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-3c1e7ba0-a1de-4559-b9d5-60801e98c8fe' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-3c1e7ba0-a1de-4559-b9d5-60801e98c8fe' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0f0d83c3-13ab-4108-997f-b809a3e8279b' class='xr-var-data-in' type='checkbox'><label for='data-0f0d83c3-13ab-4108-997f-b809a3e8279b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment</dd><dt><span>long_name :</span></dt><dd>Spectral moments(0,2)wave period(Tm02)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>221</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTM10</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-a1e427df-3033-45a0-b605-776c1287d2e0' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a1e427df-3033-45a0-b605-776c1287d2e0' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6fd1d382-7132-4948-9074-49253ed5023b' class='xr-var-data-in' type='checkbox'><label for='data-6fd1d382-7132-4948-9074-49253ed5023b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment</dd><dt><span>long_name :</span></dt><dd>Spectral moments(-1,0)wave period(Tm-10)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>201</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>VTPK</span></div><div class='xr-var-dims'>(time, latitude, longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-6d4e5cf3-6f8c-4d86-945e-49e67fbec927' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-6d4e5cf3-6f8c-4d86-945e-49e67fbec927' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1e4a9e3e-5de5-4f9a-98c0-4c8b1ea485d2' class='xr-var-data-in' type='checkbox'><label for='data-1e4a9e3e-5de5-4f9a-98c0-4c8b1ea485d2' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>s</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_period_at_variance_spectral_density_maximum</dd><dt><span>long_name :</span></dt><dd>Wave period at spectral peak/peak period(Tp)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>204</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div><div class='xr-var-data'><pre>[465320872 values with dtype=float32]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-df882d7e-86d6-4b34-8e56-767e42e3b1cb' class='xr-section-summary-in' type='checkbox'  ><label for='section-df882d7e-86d6-4b34-8e56-767e42e3b1cb' class='xr-section-summary' >Attributes: <span>(19)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Conventions :</span></dt><dd>CF-1.0</dd><dt><span>institution :</span></dt><dd>Nologin-Puertos del Estado-MeteoFrance</dd><dt><span>title :</span></dt><dd>CMEMS IBI MULTI-YEAR REANALYSIS: HOURLY WAVE PRODUCTS</dd><dt><span>easting :</span></dt><dd>longitude</dd><dt><span>northing :</span></dt><dd>latitude</dd><dt><span>references :</span></dt><dd>http://marine.copernicus.eu/</dd><dt><span>domain_name :</span></dt><dd>IBI20</dd><dt><span>field_type :</span></dt><dd>instantaneous</dd><dt><span>field_date :</span></dt><dd>20211230</dd><dt><span>bulletin_date :</span></dt><dd>2020-12-01</dd><dt><span>bulletin_type :</span></dt><dd>Reanalysis</dd><dt><span>longitude_min :</span></dt><dd>-19.f</dd><dt><span>longitude_max :</span></dt><dd>5.f</dd><dt><span>latitude_min :</span></dt><dd>26.f</dd><dt><span>latitude_max :</span></dt><dd>56.f</dd><dt><span>z_min :</span></dt><dd>0.0f</dd><dt><span>z_max :</span></dt><dd>0.0f</dd><dt><span>contact :</span></dt><dd>mailto: servicedesk.cmems@mercator-ocean.eu</dd><dt><span>source :</span></dt><dd>IBI-MFC (Operational Production Center)</dd></dl></div></li></ul></div></div>
 </div>
 
 </div>
@@ -15557,6 +15568,18 @@ Attributes: (12/19)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Explorando-los-datos-con-xarray">Explorando los datos con xarray<a class="anchor-link" href="#Explorando-los-datos-con-xarray">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Podemos obtener información de las coordenadas del data set ds:</p>
+
 </div>
 </div>
 </div>
@@ -15605,12 +15628,24 @@ Attributes: (12/19)
 
 </div>
 
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Y de las variables:</p>
+
+</div>
+</div>
+</div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Obtener información de las variables</span>
@@ -15632,7 +15667,7 @@ Attributes: (12/19)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -15680,12 +15715,24 @@ Attributes: (12/19)
 
 </div>
 
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>El atributo <code>.variables</code> nos da más información:</p>
+
+</div>
+</div>
+</div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Obtener información de las variables</span>
@@ -15707,7 +15754,7 @@ Attributes: (12/19)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -15929,7 +15976,18 @@ Attributes:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Seleccionando-los-datos">Seleccionando los datos<a class="anchor-link" href="#Seleccionando-los-datos">&#182;</a></h2><p>Seleccionamos la primera variable: <a href="https://en.wikipedia.org/wiki/Significant_wave_height">Spectral significant wave height (Hm0)</a></p>
+<h2 id="Seleccionando-los-datos">Seleccionando los datos<a class="anchor-link" href="#Seleccionando-los-datos">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Seleccionamos la primera variable: <a href="https://en.wikipedia.org/wiki/Significant_wave_height">Spectral significant wave height (Hm0)</a></p>
 
 </div>
 </div>
@@ -15939,7 +15997,7 @@ Attributes:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">VHM0</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">VHM0</span>
@@ -15950,12 +16008,24 @@ Attributes:
 </div>
 </div>
 
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Tamnién podemos seleccionar de otras maneras:</p>
+
+</div>
+</div>
+</div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#otras formas de seleccionar variables</span>
@@ -15975,823 +16045,11 @@ Attributes:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>VHM0 es un DataArray, mientras que ds es un DataSet:</p>
+<p>Observación: VHM0 es un DataArray, mientras que ds es un DataSet. Veamos que hay dentro de VHM0...</p>
 
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">VHM0</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
-<defs>
-<symbol id="icon-database" viewBox="0 0 32 32">
-<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
-<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
-<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
-</symbol>
-<symbol id="icon-file-text2" viewBox="0 0 32 32">
-<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
-<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
-<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
-<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
-</symbol>
-</defs>
-</svg>
-<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
- *
- */
-
-:root {
-  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
-  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
-  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
-  --xr-border-color: var(--jp-border-color2, #e0e0e0);
-  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
-  --xr-background-color: var(--jp-layout-color0, white);
-  --xr-background-color-row-even: var(--jp-layout-color1, white);
-  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
-}
-
-html[theme=dark],
-body.vscode-dark {
-  --xr-font-color0: rgba(255, 255, 255, 1);
-  --xr-font-color2: rgba(255, 255, 255, 0.54);
-  --xr-font-color3: rgba(255, 255, 255, 0.38);
-  --xr-border-color: #1F1F1F;
-  --xr-disabled-color: #515151;
-  --xr-background-color: #111111;
-  --xr-background-color-row-even: #111111;
-  --xr-background-color-row-odd: #313131;
-}
-
-.xr-wrap {
-  display: block;
-  min-width: 300px;
-  max-width: 700px;
-}
-
-.xr-text-repr-fallback {
-  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
-  display: none;
-}
-
-.xr-header {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-bottom: 4px;
-  border-bottom: solid 1px var(--xr-border-color);
-}
-
-.xr-header > div,
-.xr-header > ul {
-  display: inline;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.xr-obj-type,
-.xr-array-name {
-  margin-left: 2px;
-  margin-right: 10px;
-}
-
-.xr-obj-type {
-  color: var(--xr-font-color2);
-}
-
-.xr-sections {
-  padding-left: 0 !important;
-  display: grid;
-  grid-template-columns: 150px auto auto 1fr 20px 20px;
-}
-
-.xr-section-item {
-  display: contents;
-}
-
-.xr-section-item input {
-  display: none;
-}
-
-.xr-section-item input + label {
-  color: var(--xr-disabled-color);
-}
-
-.xr-section-item input:enabled + label {
-  cursor: pointer;
-  color: var(--xr-font-color2);
-}
-
-.xr-section-item input:enabled + label:hover {
-  color: var(--xr-font-color0);
-}
-
-.xr-section-summary {
-  grid-column: 1;
-  color: var(--xr-font-color2);
-  font-weight: 500;
-}
-
-.xr-section-summary > span {
-  display: inline-block;
-  padding-left: 0.5em;
-}
-
-.xr-section-summary-in:disabled + label {
-  color: var(--xr-font-color2);
-}
-
-.xr-section-summary-in + label:before {
-  display: inline-block;
-  content: '►';
-  font-size: 11px;
-  width: 15px;
-  text-align: center;
-}
-
-.xr-section-summary-in:disabled + label:before {
-  color: var(--xr-disabled-color);
-}
-
-.xr-section-summary-in:checked + label:before {
-  content: '▼';
-}
-
-.xr-section-summary-in:checked + label > span {
-  display: none;
-}
-
-.xr-section-summary,
-.xr-section-inline-details {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.xr-section-inline-details {
-  grid-column: 2 / -1;
-}
-
-.xr-section-details {
-  display: none;
-  grid-column: 1 / -1;
-  margin-bottom: 5px;
-}
-
-.xr-section-summary-in:checked ~ .xr-section-details {
-  display: contents;
-}
-
-.xr-array-wrap {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 20px auto;
-}
-
-.xr-array-wrap > label {
-  grid-column: 1;
-  vertical-align: top;
-}
-
-.xr-preview {
-  color: var(--xr-font-color3);
-}
-
-.xr-array-preview,
-.xr-array-data {
-  padding: 0 5px !important;
-  grid-column: 2;
-}
-
-.xr-array-data,
-.xr-array-in:checked ~ .xr-array-preview {
-  display: none;
-}
-
-.xr-array-in:checked ~ .xr-array-data,
-.xr-array-preview {
-  display: inline-block;
-}
-
-.xr-dim-list {
-  display: inline-block !important;
-  list-style: none;
-  padding: 0 !important;
-  margin: 0;
-}
-
-.xr-dim-list li {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-.xr-dim-list:before {
-  content: '(';
-}
-
-.xr-dim-list:after {
-  content: ')';
-}
-
-.xr-dim-list li:not(:last-child):after {
-  content: ',';
-  padding-right: 5px;
-}
-
-.xr-has-index {
-  font-weight: bold;
-}
-
-.xr-var-list,
-.xr-var-item {
-  display: contents;
-}
-
-.xr-var-item > div,
-.xr-var-item label,
-.xr-var-item > .xr-var-name span {
-  background-color: var(--xr-background-color-row-even);
-  margin-bottom: 0;
-}
-
-.xr-var-item > .xr-var-name:hover span {
-  padding-right: 5px;
-}
-
-.xr-var-list > li:nth-child(odd) > div,
-.xr-var-list > li:nth-child(odd) > label,
-.xr-var-list > li:nth-child(odd) > .xr-var-name span {
-  background-color: var(--xr-background-color-row-odd);
-}
-
-.xr-var-name {
-  grid-column: 1;
-}
-
-.xr-var-dims {
-  grid-column: 2;
-}
-
-.xr-var-dtype {
-  grid-column: 3;
-  text-align: right;
-  color: var(--xr-font-color2);
-}
-
-.xr-var-preview {
-  grid-column: 4;
-}
-
-.xr-var-name,
-.xr-var-dims,
-.xr-var-dtype,
-.xr-preview,
-.xr-attrs dt {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-right: 10px;
-}
-
-.xr-var-name:hover,
-.xr-var-dims:hover,
-.xr-var-dtype:hover,
-.xr-attrs dt:hover {
-  overflow: visible;
-  width: auto;
-  z-index: 1;
-}
-
-.xr-var-attrs,
-.xr-var-data {
-  display: none;
-  background-color: var(--xr-background-color) !important;
-  padding-bottom: 5px !important;
-}
-
-.xr-var-attrs-in:checked ~ .xr-var-attrs,
-.xr-var-data-in:checked ~ .xr-var-data {
-  display: block;
-}
-
-.xr-var-data > table {
-  float: right;
-}
-
-.xr-var-name span,
-.xr-var-data,
-.xr-attrs {
-  padding-left: 25px !important;
-}
-
-.xr-attrs,
-.xr-var-attrs,
-.xr-var-data {
-  grid-column: 1 / -1;
-}
-
-dl.xr-attrs {
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 125px auto;
-}
-
-.xr-attrs dt,
-.xr-attrs dd {
-  padding: 0;
-  margin: 0;
-  float: left;
-  padding-right: 10px;
-  width: auto;
-}
-
-.xr-attrs dt {
-  font-weight: normal;
-  grid-column: 1;
-}
-
-.xr-attrs dt:hover span {
-  display: inline-block;
-  background: var(--xr-background-color);
-  padding-right: 10px;
-}
-
-.xr-attrs dd {
-  grid-column: 2;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-
-.xr-icon-database,
-.xr-icon-file-text2 {
-  display: inline-block;
-  vertical-align: middle;
-  width: 1em;
-  height: 1.5em !important;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;VHM0&#x27; (time: 254184, latitude: 601, longitude: 481)&gt;
-[465320872 values with dtype=float32]
-Coordinates:
-  * latitude   (latitude) float32 26.0 26.05 26.1 26.15 ... 55.9 55.95 56.0
-  * longitude  (longitude) float32 -19.0 -18.95 -18.9 -18.85 ... 4.9 4.95 5.0
-  * time       (time) datetime64[ns] 1993-01-01 ... 2021-12-30T23:00:00
-Attributes:
-    units:             m
-    standard_name:     sea_surface_wave_significant_height
-    long_name:         Spectral significant wave height (Hm0)
-    type_of_analysis:  spectral analysis
-    WMO_code:          100
-    valid_min:         0
-    valid_max:         3000
-    _ChunkSizes:       [12, 301, 241]</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'VHM0'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>time</span>: 254184</li><li><span class='xr-has-index'>latitude</span>: 601</li><li><span class='xr-has-index'>longitude</span>: 481</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-02331662-d7db-42f5-b757-cfc36ce365d7' class='xr-array-in' type='checkbox' checked><label for='section-02331662-d7db-42f5-b757-cfc36ce365d7' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[465320872 values with dtype=float32]</pre></div></div></li><li class='xr-section-item'><input id='section-3051dd33-abe8-4fb6-96af-98ef02e32a3f' class='xr-section-summary-in' type='checkbox'  checked><label for='section-3051dd33-abe8-4fb6-96af-98ef02e32a3f' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>26.0 26.05 26.1 ... 55.9 55.95 56.0</div><input id='attrs-507ee781-059a-4ee7-8438-2105f46b22e2' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-507ee781-059a-4ee7-8438-2105f46b22e2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6ed213eb-2048-4b60-8b81-54bc11bfbf35' class='xr-var-data-in' type='checkbox'><label for='data-6ed213eb-2048-4b60-8b81-54bc11bfbf35' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div><div class='xr-var-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-19.0 -18.95 -18.9 ... 4.9 4.95 5.0</div><input id='attrs-9550342d-168c-4f0b-9f8a-0671538c3250' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-9550342d-168c-4f0b-9f8a-0671538c3250' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-39706d99-87fa-40ae-a869-62338fb79427' class='xr-var-data-in' type='checkbox'><label for='data-39706d99-87fa-40ae-a869-62338fb79427' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>longitude</dd><dt><span>long_name :</span></dt><dd>Longitude</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>unit_long :</span></dt><dd>Degrees East</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lon</dd><dt><span>_ChunkSizes :</span></dt><dd>481</dd></dl></div><div class='xr-var-data'><pre>array([-19.  , -18.95, -18.9 , ...,   4.9 ,   4.95,   5.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1993-01-01 ... 2021-12-30T23:00:00</div><input id='attrs-f88f5365-6d46-426b-a63b-8abbe1917136' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f88f5365-6d46-426b-a63b-8abbe1917136' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4165b109-2983-4a05-bf98-b327c5681ba2' class='xr-var-data-in' type='checkbox'><label for='data-4165b109-2983-4a05-bf98-b327c5681ba2' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>axis :</span></dt><dd>T</dd><dt><span>long_name :</span></dt><dd>time</dd><dt><span>standard_name :</span></dt><dd>time</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Time</dd><dt><span>_ChunkSizes :</span></dt><dd>24</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1993-01-01T00:00:00.000000000&#x27;, &#x27;1993-01-01T01:00:00.000000000&#x27;,
-       &#x27;1993-01-01T02:00:00.000000000&#x27;, ..., &#x27;2021-12-30T21:00:00.000000000&#x27;,
-       &#x27;2021-12-30T22:00:00.000000000&#x27;, &#x27;2021-12-30T23:00:00.000000000&#x27;],
-      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-60df0be2-537f-4d06-ab2a-b87dfb52b7cc' class='xr-section-summary-in' type='checkbox'  checked><label for='section-60df0be2-537f-4d06-ab2a-b87dfb52b7cc' class='xr-section-summary' >Attributes: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant wave height (Hm0)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>100</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div></li></ul></div></div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#accedemos a las latitudes</span>
-<span class="n">VHM0</span><span class="o">.</span><span class="n">latitude</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
-<defs>
-<symbol id="icon-database" viewBox="0 0 32 32">
-<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
-<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
-<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
-</symbol>
-<symbol id="icon-file-text2" viewBox="0 0 32 32">
-<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
-<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
-<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
-<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
-</symbol>
-</defs>
-</svg>
-<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
- *
- */
-
-:root {
-  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
-  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
-  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
-  --xr-border-color: var(--jp-border-color2, #e0e0e0);
-  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
-  --xr-background-color: var(--jp-layout-color0, white);
-  --xr-background-color-row-even: var(--jp-layout-color1, white);
-  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
-}
-
-html[theme=dark],
-body.vscode-dark {
-  --xr-font-color0: rgba(255, 255, 255, 1);
-  --xr-font-color2: rgba(255, 255, 255, 0.54);
-  --xr-font-color3: rgba(255, 255, 255, 0.38);
-  --xr-border-color: #1F1F1F;
-  --xr-disabled-color: #515151;
-  --xr-background-color: #111111;
-  --xr-background-color-row-even: #111111;
-  --xr-background-color-row-odd: #313131;
-}
-
-.xr-wrap {
-  display: block;
-  min-width: 300px;
-  max-width: 700px;
-}
-
-.xr-text-repr-fallback {
-  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
-  display: none;
-}
-
-.xr-header {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-bottom: 4px;
-  border-bottom: solid 1px var(--xr-border-color);
-}
-
-.xr-header > div,
-.xr-header > ul {
-  display: inline;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.xr-obj-type,
-.xr-array-name {
-  margin-left: 2px;
-  margin-right: 10px;
-}
-
-.xr-obj-type {
-  color: var(--xr-font-color2);
-}
-
-.xr-sections {
-  padding-left: 0 !important;
-  display: grid;
-  grid-template-columns: 150px auto auto 1fr 20px 20px;
-}
-
-.xr-section-item {
-  display: contents;
-}
-
-.xr-section-item input {
-  display: none;
-}
-
-.xr-section-item input + label {
-  color: var(--xr-disabled-color);
-}
-
-.xr-section-item input:enabled + label {
-  cursor: pointer;
-  color: var(--xr-font-color2);
-}
-
-.xr-section-item input:enabled + label:hover {
-  color: var(--xr-font-color0);
-}
-
-.xr-section-summary {
-  grid-column: 1;
-  color: var(--xr-font-color2);
-  font-weight: 500;
-}
-
-.xr-section-summary > span {
-  display: inline-block;
-  padding-left: 0.5em;
-}
-
-.xr-section-summary-in:disabled + label {
-  color: var(--xr-font-color2);
-}
-
-.xr-section-summary-in + label:before {
-  display: inline-block;
-  content: '►';
-  font-size: 11px;
-  width: 15px;
-  text-align: center;
-}
-
-.xr-section-summary-in:disabled + label:before {
-  color: var(--xr-disabled-color);
-}
-
-.xr-section-summary-in:checked + label:before {
-  content: '▼';
-}
-
-.xr-section-summary-in:checked + label > span {
-  display: none;
-}
-
-.xr-section-summary,
-.xr-section-inline-details {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.xr-section-inline-details {
-  grid-column: 2 / -1;
-}
-
-.xr-section-details {
-  display: none;
-  grid-column: 1 / -1;
-  margin-bottom: 5px;
-}
-
-.xr-section-summary-in:checked ~ .xr-section-details {
-  display: contents;
-}
-
-.xr-array-wrap {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 20px auto;
-}
-
-.xr-array-wrap > label {
-  grid-column: 1;
-  vertical-align: top;
-}
-
-.xr-preview {
-  color: var(--xr-font-color3);
-}
-
-.xr-array-preview,
-.xr-array-data {
-  padding: 0 5px !important;
-  grid-column: 2;
-}
-
-.xr-array-data,
-.xr-array-in:checked ~ .xr-array-preview {
-  display: none;
-}
-
-.xr-array-in:checked ~ .xr-array-data,
-.xr-array-preview {
-  display: inline-block;
-}
-
-.xr-dim-list {
-  display: inline-block !important;
-  list-style: none;
-  padding: 0 !important;
-  margin: 0;
-}
-
-.xr-dim-list li {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-.xr-dim-list:before {
-  content: '(';
-}
-
-.xr-dim-list:after {
-  content: ')';
-}
-
-.xr-dim-list li:not(:last-child):after {
-  content: ',';
-  padding-right: 5px;
-}
-
-.xr-has-index {
-  font-weight: bold;
-}
-
-.xr-var-list,
-.xr-var-item {
-  display: contents;
-}
-
-.xr-var-item > div,
-.xr-var-item label,
-.xr-var-item > .xr-var-name span {
-  background-color: var(--xr-background-color-row-even);
-  margin-bottom: 0;
-}
-
-.xr-var-item > .xr-var-name:hover span {
-  padding-right: 5px;
-}
-
-.xr-var-list > li:nth-child(odd) > div,
-.xr-var-list > li:nth-child(odd) > label,
-.xr-var-list > li:nth-child(odd) > .xr-var-name span {
-  background-color: var(--xr-background-color-row-odd);
-}
-
-.xr-var-name {
-  grid-column: 1;
-}
-
-.xr-var-dims {
-  grid-column: 2;
-}
-
-.xr-var-dtype {
-  grid-column: 3;
-  text-align: right;
-  color: var(--xr-font-color2);
-}
-
-.xr-var-preview {
-  grid-column: 4;
-}
-
-.xr-var-name,
-.xr-var-dims,
-.xr-var-dtype,
-.xr-preview,
-.xr-attrs dt {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-right: 10px;
-}
-
-.xr-var-name:hover,
-.xr-var-dims:hover,
-.xr-var-dtype:hover,
-.xr-attrs dt:hover {
-  overflow: visible;
-  width: auto;
-  z-index: 1;
-}
-
-.xr-var-attrs,
-.xr-var-data {
-  display: none;
-  background-color: var(--xr-background-color) !important;
-  padding-bottom: 5px !important;
-}
-
-.xr-var-attrs-in:checked ~ .xr-var-attrs,
-.xr-var-data-in:checked ~ .xr-var-data {
-  display: block;
-}
-
-.xr-var-data > table {
-  float: right;
-}
-
-.xr-var-name span,
-.xr-var-data,
-.xr-attrs {
-  padding-left: 25px !important;
-}
-
-.xr-attrs,
-.xr-var-attrs,
-.xr-var-data {
-  grid-column: 1 / -1;
-}
-
-dl.xr-attrs {
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 125px auto;
-}
-
-.xr-attrs dt,
-.xr-attrs dd {
-  padding: 0;
-  margin: 0;
-  float: left;
-  padding-right: 10px;
-  width: auto;
-}
-
-.xr-attrs dt {
-  font-weight: normal;
-  grid-column: 1;
-}
-
-.xr-attrs dt:hover span {
-  display: inline-block;
-  background: var(--xr-background-color);
-  padding-right: 10px;
-}
-
-.xr-attrs dd {
-  grid-column: 2;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-
-.xr-icon-database,
-.xr-icon-file-text2 {
-  display: inline-block;
-  vertical-align: middle;
-  width: 1em;
-  height: 1.5em !important;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;latitude&#x27; (latitude: 601)&gt;
-array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)
-Coordinates:
-  * latitude  (latitude) float32 26.0 26.05 26.1 26.15 ... 55.85 55.9 55.95 56.0
-Attributes:
-    standard_name:        latitude
-    long_name:            Latitude
-    units:                degrees_north
-    axis:                 Y
-    unit_long:            Degrees North
-    step:                 0.05f
-    _CoordinateAxisType:  Lat
-    _ChunkSizes:          601</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'latitude'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>latitude</span>: 601</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-23fdc74f-4f1e-44c6-9cfc-18edf310f111' class='xr-array-in' type='checkbox' checked><label for='section-23fdc74f-4f1e-44c6-9cfc-18edf310f111' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>26.0 26.05 26.1 26.15 26.2 26.25 ... 55.75 55.8 55.85 55.9 55.95 56.0</span></div><div class='xr-array-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-7a4c7a06-8c04-48f7-9cf6-55eb26e5c953' class='xr-section-summary-in' type='checkbox'  checked><label for='section-7a4c7a06-8c04-48f7-9cf6-55eb26e5c953' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>26.0 26.05 26.1 ... 55.9 55.95 56.0</div><input id='attrs-e5f0672a-522f-4d22-bc35-99dd43958ab4' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e5f0672a-522f-4d22-bc35-99dd43958ab4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ec6b749c-9b24-42aa-a005-a40d2590cb31' class='xr-var-data-in' type='checkbox'><label for='data-ec6b749c-9b24-42aa-a005-a40d2590cb31' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div><div class='xr-var-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-0b6b943d-2c6d-484d-8966-f891778a0440' class='xr-section-summary-in' type='checkbox'  checked><label for='section-0b6b943d-2c6d-484d-8966-f891778a0440' class='xr-section-summary' >Attributes: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div></li></ul></div></div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16800,10 +16058,7 @@ Attributes:
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Selecciones en el espacio de índices</span>
-<span class="n">VHM0</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">VHM0</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">VHM0</span><span class="p">[</span><span class="mi">0</span><span class="p">,:,:]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">VHM0</span>
 </pre></div>
 
      </div>
@@ -17177,12 +16432,12 @@ dl.xr-attrs {
   stroke: currentColor;
   fill: currentColor;
 }
-</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;VHM0&#x27; (latitude: 601, longitude: 481)&gt;
-[289081 values with dtype=float32]
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;VHM0&#x27; (time: 254184, latitude: 601, longitude: 481)&gt;
+[465320872 values with dtype=float32]
 Coordinates:
   * latitude   (latitude) float32 26.0 26.05 26.1 26.15 ... 55.9 55.95 56.0
   * longitude  (longitude) float32 -19.0 -18.95 -18.9 -18.85 ... 4.9 4.95 5.0
-    time       datetime64[ns] 1993-01-01
+  * time       (time) datetime64[ns] 1993-01-01 ... 2021-12-30T23:00:00
 Attributes:
     units:             m
     standard_name:     sea_surface_wave_significant_height
@@ -17191,7 +16446,10 @@ Attributes:
     WMO_code:          100
     valid_min:         0
     valid_max:         3000
-    _ChunkSizes:       [12, 301, 241]</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'VHM0'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>latitude</span>: 601</li><li><span class='xr-has-index'>longitude</span>: 481</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-8534b0a9-09a6-4cd8-9847-a5232563e778' class='xr-array-in' type='checkbox' checked><label for='section-8534b0a9-09a6-4cd8-9847-a5232563e778' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[289081 values with dtype=float32]</pre></div></div></li><li class='xr-section-item'><input id='section-8d1981cf-10cc-4cc4-8d14-12f64154b289' class='xr-section-summary-in' type='checkbox'  checked><label for='section-8d1981cf-10cc-4cc4-8d14-12f64154b289' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>26.0 26.05 26.1 ... 55.9 55.95 56.0</div><input id='attrs-90dbd7ee-997c-4484-ab2d-5c6f771f3de3' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-90dbd7ee-997c-4484-ab2d-5c6f771f3de3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6e40d38d-d4d5-43a5-a7b6-7c603a647533' class='xr-var-data-in' type='checkbox'><label for='data-6e40d38d-d4d5-43a5-a7b6-7c603a647533' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div><div class='xr-var-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-19.0 -18.95 -18.9 ... 4.9 4.95 5.0</div><input id='attrs-58c9cd84-0c04-49a5-b2c0-3b14f52dfacd' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-58c9cd84-0c04-49a5-b2c0-3b14f52dfacd' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9fba5c23-f2a1-42c6-b1e3-c7cb3d6de348' class='xr-var-data-in' type='checkbox'><label for='data-9fba5c23-f2a1-42c6-b1e3-c7cb3d6de348' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>longitude</dd><dt><span>long_name :</span></dt><dd>Longitude</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>unit_long :</span></dt><dd>Degrees East</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lon</dd><dt><span>_ChunkSizes :</span></dt><dd>481</dd></dl></div><div class='xr-var-data'><pre>array([-19.  , -18.95, -18.9 , ...,   4.9 ,   4.95,   5.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1993-01-01</div><input id='attrs-a0ce6264-f6d5-4fad-bc25-ff2b4942af6d' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a0ce6264-f6d5-4fad-bc25-ff2b4942af6d' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-5b6e360c-ed29-4dc9-90a2-3fd53c7905ee' class='xr-var-data-in' type='checkbox'><label for='data-5b6e360c-ed29-4dc9-90a2-3fd53c7905ee' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>axis :</span></dt><dd>T</dd><dt><span>long_name :</span></dt><dd>time</dd><dt><span>standard_name :</span></dt><dd>time</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Time</dd><dt><span>_ChunkSizes :</span></dt><dd>24</dd></dl></div><div class='xr-var-data'><pre>array(&#x27;1993-01-01T00:00:00.000000000&#x27;, dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-a5e69ebb-428a-4de9-bf3a-1107e8d16b74' class='xr-section-summary-in' type='checkbox'  checked><label for='section-a5e69ebb-428a-4de9-bf3a-1107e8d16b74' class='xr-section-summary' >Attributes: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant wave height (Hm0)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>100</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div></li></ul></div></div>
+    _ChunkSizes:       [12, 301, 241]</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'VHM0'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>time</span>: 254184</li><li><span class='xr-has-index'>latitude</span>: 601</li><li><span class='xr-has-index'>longitude</span>: 481</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-74e81214-1afe-428a-8ce1-5908bf807717' class='xr-array-in' type='checkbox' checked><label for='section-74e81214-1afe-428a-8ce1-5908bf807717' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>...</span></div><div class='xr-array-data'><pre>[465320872 values with dtype=float32]</pre></div></div></li><li class='xr-section-item'><input id='section-fcc57d4a-87ec-4e97-a394-e5ed389ffdb6' class='xr-section-summary-in' type='checkbox'  checked><label for='section-fcc57d4a-87ec-4e97-a394-e5ed389ffdb6' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>26.0 26.05 26.1 ... 55.9 55.95 56.0</div><input id='attrs-e96a06aa-7bd9-4d76-9d05-c730ff4ff054' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e96a06aa-7bd9-4d76-9d05-c730ff4ff054' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b21f3419-b2aa-40c4-bdde-345999b7dc6d' class='xr-var-data-in' type='checkbox'><label for='data-b21f3419-b2aa-40c4-bdde-345999b7dc6d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div><div class='xr-var-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>longitude</span></div><div class='xr-var-dims'>(longitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-19.0 -18.95 -18.9 ... 4.9 4.95 5.0</div><input id='attrs-938b1ca4-ceef-4766-a423-3f358b6e418f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-938b1ca4-ceef-4766-a423-3f358b6e418f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-05dbb827-d952-4fc4-9792-587c2ab7dac7' class='xr-var-data-in' type='checkbox'><label for='data-05dbb827-d952-4fc4-9792-587c2ab7dac7' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>longitude</dd><dt><span>long_name :</span></dt><dd>Longitude</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>unit_long :</span></dt><dd>Degrees East</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lon</dd><dt><span>_ChunkSizes :</span></dt><dd>481</dd></dl></div><div class='xr-var-data'><pre>array([-19.  , -18.95, -18.9 , ...,   4.9 ,   4.95,   5.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>1993-01-01 ... 2021-12-30T23:00:00</div><input id='attrs-633cef3b-4199-40de-87f7-05758dcba71f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-633cef3b-4199-40de-87f7-05758dcba71f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-999e4943-484d-4dfa-a938-062cb72e59f3' class='xr-var-data-in' type='checkbox'><label for='data-999e4943-484d-4dfa-a938-062cb72e59f3' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>axis :</span></dt><dd>T</dd><dt><span>long_name :</span></dt><dd>time</dd><dt><span>standard_name :</span></dt><dd>time</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Time</dd><dt><span>_ChunkSizes :</span></dt><dd>24</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;1993-01-01T00:00:00.000000000&#x27;, &#x27;1993-01-01T01:00:00.000000000&#x27;,
+       &#x27;1993-01-01T02:00:00.000000000&#x27;, ..., &#x27;2021-12-30T21:00:00.000000000&#x27;,
+       &#x27;2021-12-30T22:00:00.000000000&#x27;, &#x27;2021-12-30T23:00:00.000000000&#x27;],
+      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-8385375a-b743-4eb3-a079-fd1ff442c5b5' class='xr-section-summary-in' type='checkbox'  checked><label for='section-8385375a-b743-4eb3-a079-fd1ff442c5b5' class='xr-section-summary' >Attributes: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant wave height (Hm0)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>100</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div></li></ul></div></div>
 </div>
 
 </div>
@@ -17200,6 +16458,895 @@ Attributes:
 
 </div>
 
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>De manera similar podemos seleccionar las coordenadas:</p>
+
+</div>
+</div>
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#accedemos a las latitudes</span>
+<span class="n">VHM0</span><span class="o">.</span><span class="n">latitude</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+<defs>
+<symbol id="icon-database" viewBox="0 0 32 32">
+<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+</symbol>
+<symbol id="icon-file-text2" viewBox="0 0 32 32">
+<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+</symbol>
+</defs>
+</svg>
+<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
+ *
+ */
+
+:root {
+  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
+  --xr-border-color: var(--jp-border-color2, #e0e0e0);
+  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
+  --xr-background-color: var(--jp-layout-color0, white);
+  --xr-background-color-row-even: var(--jp-layout-color1, white);
+  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
+}
+
+html[theme=dark],
+body.vscode-dark {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+.xr-wrap {
+  display: block;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.xr-text-repr-fallback {
+  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
+  display: none;
+}
+
+.xr-header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: solid 1px var(--xr-border-color);
+}
+
+.xr-header > div,
+.xr-header > ul {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xr-obj-type,
+.xr-array-name {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.xr-obj-type {
+  color: var(--xr-font-color2);
+}
+
+.xr-sections {
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: 150px auto auto 1fr 20px 20px;
+}
+
+.xr-section-item {
+  display: contents;
+}
+
+.xr-section-item input {
+  display: none;
+}
+
+.xr-section-item input + label {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-item input:enabled + label {
+  cursor: pointer;
+  color: var(--xr-font-color2);
+}
+
+.xr-section-item input:enabled + label:hover {
+  color: var(--xr-font-color0);
+}
+
+.xr-section-summary {
+  grid-column: 1;
+  color: var(--xr-font-color2);
+  font-weight: 500;
+}
+
+.xr-section-summary > span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.xr-section-summary-in:disabled + label {
+  color: var(--xr-font-color2);
+}
+
+.xr-section-summary-in + label:before {
+  display: inline-block;
+  content: '►';
+  font-size: 11px;
+  width: 15px;
+  text-align: center;
+}
+
+.xr-section-summary-in:disabled + label:before {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-summary-in:checked + label:before {
+  content: '▼';
+}
+
+.xr-section-summary-in:checked + label > span {
+  display: none;
+}
+
+.xr-section-summary,
+.xr-section-inline-details {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.xr-section-inline-details {
+  grid-column: 2 / -1;
+}
+
+.xr-section-details {
+  display: none;
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.xr-section-summary-in:checked ~ .xr-section-details {
+  display: contents;
+}
+
+.xr-array-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.xr-array-wrap > label {
+  grid-column: 1;
+  vertical-align: top;
+}
+
+.xr-preview {
+  color: var(--xr-font-color3);
+}
+
+.xr-array-preview,
+.xr-array-data {
+  padding: 0 5px !important;
+  grid-column: 2;
+}
+
+.xr-array-data,
+.xr-array-in:checked ~ .xr-array-preview {
+  display: none;
+}
+
+.xr-array-in:checked ~ .xr-array-data,
+.xr-array-preview {
+  display: inline-block;
+}
+
+.xr-dim-list {
+  display: inline-block !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.xr-dim-list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.xr-dim-list:before {
+  content: '(';
+}
+
+.xr-dim-list:after {
+  content: ')';
+}
+
+.xr-dim-list li:not(:last-child):after {
+  content: ',';
+  padding-right: 5px;
+}
+
+.xr-has-index {
+  font-weight: bold;
+}
+
+.xr-var-list,
+.xr-var-item {
+  display: contents;
+}
+
+.xr-var-item > div,
+.xr-var-item label,
+.xr-var-item > .xr-var-name span {
+  background-color: var(--xr-background-color-row-even);
+  margin-bottom: 0;
+}
+
+.xr-var-item > .xr-var-name:hover span {
+  padding-right: 5px;
+}
+
+.xr-var-list > li:nth-child(odd) > div,
+.xr-var-list > li:nth-child(odd) > label,
+.xr-var-list > li:nth-child(odd) > .xr-var-name span {
+  background-color: var(--xr-background-color-row-odd);
+}
+
+.xr-var-name {
+  grid-column: 1;
+}
+
+.xr-var-dims {
+  grid-column: 2;
+}
+
+.xr-var-dtype {
+  grid-column: 3;
+  text-align: right;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-preview {
+  grid-column: 4;
+}
+
+.xr-var-name,
+.xr-var-dims,
+.xr-var-dtype,
+.xr-preview,
+.xr-attrs dt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.xr-var-name:hover,
+.xr-var-dims:hover,
+.xr-var-dtype:hover,
+.xr-attrs dt:hover {
+  overflow: visible;
+  width: auto;
+  z-index: 1;
+}
+
+.xr-var-attrs,
+.xr-var-data {
+  display: none;
+  background-color: var(--xr-background-color) !important;
+  padding-bottom: 5px !important;
+}
+
+.xr-var-attrs-in:checked ~ .xr-var-attrs,
+.xr-var-data-in:checked ~ .xr-var-data {
+  display: block;
+}
+
+.xr-var-data > table {
+  float: right;
+}
+
+.xr-var-name span,
+.xr-var-data,
+.xr-attrs {
+  padding-left: 25px !important;
+}
+
+.xr-attrs,
+.xr-var-attrs,
+.xr-var-data {
+  grid-column: 1 / -1;
+}
+
+dl.xr-attrs {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+
+.xr-attrs dt,
+.xr-attrs dd {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+}
+
+.xr-attrs dt {
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.xr-attrs dt:hover span {
+  display: inline-block;
+  background: var(--xr-background-color);
+  padding-right: 10px;
+}
+
+.xr-attrs dd {
+  grid-column: 2;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.xr-icon-database,
+.xr-icon-file-text2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1.5em !important;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;latitude&#x27; (latitude: 601)&gt;
+array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)
+Coordinates:
+  * latitude  (latitude) float32 26.0 26.05 26.1 26.15 ... 55.85 55.9 55.95 56.0
+Attributes:
+    standard_name:        latitude
+    long_name:            Latitude
+    units:                degrees_north
+    axis:                 Y
+    unit_long:            Degrees North
+    step:                 0.05f
+    _CoordinateAxisType:  Lat
+    _ChunkSizes:          601</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'latitude'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>latitude</span>: 601</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-6c51c775-0ea7-44e2-a26c-239e05f1d6bd' class='xr-array-in' type='checkbox' checked><label for='section-6c51c775-0ea7-44e2-a26c-239e05f1d6bd' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>26.0 26.05 26.1 26.15 26.2 26.25 ... 55.75 55.8 55.85 55.9 55.95 56.0</span></div><div class='xr-array-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-f0cbcc9d-4856-4ed8-be73-231288796efa' class='xr-section-summary-in' type='checkbox'  checked><label for='section-f0cbcc9d-4856-4ed8-be73-231288796efa' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>26.0 26.05 26.1 ... 55.9 55.95 56.0</div><input id='attrs-d3540662-89a1-4c71-99c6-35211a658212' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-d3540662-89a1-4c71-99c6-35211a658212' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-c81603ec-fbc3-4366-9bb7-b20d3b50baf2' class='xr-var-data-in' type='checkbox'><label for='data-c81603ec-fbc3-4366-9bb7-b20d3b50baf2' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div><div class='xr-var-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-0b0e2cae-d8b1-475a-8786-d8ffcc059d1e' class='xr-section-summary-in' type='checkbox'  checked><label for='section-0b0e2cae-d8b1-475a-8786-d8ffcc059d1e' class='xr-section-summary' >Attributes: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div></li></ul></div></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Ahora veremos diferentes formas de seleccionar un valor o un rango de valores para una/s coordenada/s. Para esto, podemos utilizar índices, es decir, la posición de dicha coordenada en el array de valores, este tipo de selecciones se da en el esapcio de los índices.</p>
+
+</div>
+</div>
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Selecciones en el espacio de índices</span>
+<span class="n">VHM0</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span><span class="n">longitude</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">VHM0</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,:,</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+<defs>
+<symbol id="icon-database" viewBox="0 0 32 32">
+<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+</symbol>
+<symbol id="icon-file-text2" viewBox="0 0 32 32">
+<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+</symbol>
+</defs>
+</svg>
+<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
+ *
+ */
+
+:root {
+  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
+  --xr-border-color: var(--jp-border-color2, #e0e0e0);
+  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
+  --xr-background-color: var(--jp-layout-color0, white);
+  --xr-background-color-row-even: var(--jp-layout-color1, white);
+  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
+}
+
+html[theme=dark],
+body.vscode-dark {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+.xr-wrap {
+  display: block;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.xr-text-repr-fallback {
+  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
+  display: none;
+}
+
+.xr-header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: solid 1px var(--xr-border-color);
+}
+
+.xr-header > div,
+.xr-header > ul {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xr-obj-type,
+.xr-array-name {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.xr-obj-type {
+  color: var(--xr-font-color2);
+}
+
+.xr-sections {
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: 150px auto auto 1fr 20px 20px;
+}
+
+.xr-section-item {
+  display: contents;
+}
+
+.xr-section-item input {
+  display: none;
+}
+
+.xr-section-item input + label {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-item input:enabled + label {
+  cursor: pointer;
+  color: var(--xr-font-color2);
+}
+
+.xr-section-item input:enabled + label:hover {
+  color: var(--xr-font-color0);
+}
+
+.xr-section-summary {
+  grid-column: 1;
+  color: var(--xr-font-color2);
+  font-weight: 500;
+}
+
+.xr-section-summary > span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.xr-section-summary-in:disabled + label {
+  color: var(--xr-font-color2);
+}
+
+.xr-section-summary-in + label:before {
+  display: inline-block;
+  content: '►';
+  font-size: 11px;
+  width: 15px;
+  text-align: center;
+}
+
+.xr-section-summary-in:disabled + label:before {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-summary-in:checked + label:before {
+  content: '▼';
+}
+
+.xr-section-summary-in:checked + label > span {
+  display: none;
+}
+
+.xr-section-summary,
+.xr-section-inline-details {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.xr-section-inline-details {
+  grid-column: 2 / -1;
+}
+
+.xr-section-details {
+  display: none;
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.xr-section-summary-in:checked ~ .xr-section-details {
+  display: contents;
+}
+
+.xr-array-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.xr-array-wrap > label {
+  grid-column: 1;
+  vertical-align: top;
+}
+
+.xr-preview {
+  color: var(--xr-font-color3);
+}
+
+.xr-array-preview,
+.xr-array-data {
+  padding: 0 5px !important;
+  grid-column: 2;
+}
+
+.xr-array-data,
+.xr-array-in:checked ~ .xr-array-preview {
+  display: none;
+}
+
+.xr-array-in:checked ~ .xr-array-data,
+.xr-array-preview {
+  display: inline-block;
+}
+
+.xr-dim-list {
+  display: inline-block !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.xr-dim-list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.xr-dim-list:before {
+  content: '(';
+}
+
+.xr-dim-list:after {
+  content: ')';
+}
+
+.xr-dim-list li:not(:last-child):after {
+  content: ',';
+  padding-right: 5px;
+}
+
+.xr-has-index {
+  font-weight: bold;
+}
+
+.xr-var-list,
+.xr-var-item {
+  display: contents;
+}
+
+.xr-var-item > div,
+.xr-var-item label,
+.xr-var-item > .xr-var-name span {
+  background-color: var(--xr-background-color-row-even);
+  margin-bottom: 0;
+}
+
+.xr-var-item > .xr-var-name:hover span {
+  padding-right: 5px;
+}
+
+.xr-var-list > li:nth-child(odd) > div,
+.xr-var-list > li:nth-child(odd) > label,
+.xr-var-list > li:nth-child(odd) > .xr-var-name span {
+  background-color: var(--xr-background-color-row-odd);
+}
+
+.xr-var-name {
+  grid-column: 1;
+}
+
+.xr-var-dims {
+  grid-column: 2;
+}
+
+.xr-var-dtype {
+  grid-column: 3;
+  text-align: right;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-preview {
+  grid-column: 4;
+}
+
+.xr-var-name,
+.xr-var-dims,
+.xr-var-dtype,
+.xr-preview,
+.xr-attrs dt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.xr-var-name:hover,
+.xr-var-dims:hover,
+.xr-var-dtype:hover,
+.xr-attrs dt:hover {
+  overflow: visible;
+  width: auto;
+  z-index: 1;
+}
+
+.xr-var-attrs,
+.xr-var-data {
+  display: none;
+  background-color: var(--xr-background-color) !important;
+  padding-bottom: 5px !important;
+}
+
+.xr-var-attrs-in:checked ~ .xr-var-attrs,
+.xr-var-data-in:checked ~ .xr-var-data {
+  display: block;
+}
+
+.xr-var-data > table {
+  float: right;
+}
+
+.xr-var-name span,
+.xr-var-data,
+.xr-attrs {
+  padding-left: 25px !important;
+}
+
+.xr-attrs,
+.xr-var-attrs,
+.xr-var-data {
+  grid-column: 1 / -1;
+}
+
+dl.xr-attrs {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+
+.xr-attrs dt,
+.xr-attrs dd {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+}
+
+.xr-attrs dt {
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.xr-attrs dt:hover span {
+  display: inline-block;
+  background: var(--xr-background-color);
+  padding-right: 10px;
+}
+
+.xr-attrs dd {
+  grid-column: 2;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.xr-icon-database,
+.xr-icon-file-text2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1.5em !important;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;VHM0&#x27; (latitude: 601)&gt;
+array([2.31, 2.32, 2.32, ..., 4.16, 4.16, 4.17], dtype=float32)
+Coordinates:
+  * latitude   (latitude) float32 26.0 26.05 26.1 26.15 ... 55.9 55.95 56.0
+    longitude  float32 -19.0
+    time       datetime64[ns] 2021-12-30T23:00:00
+Attributes:
+    units:             m
+    standard_name:     sea_surface_wave_significant_height
+    long_name:         Spectral significant wave height (Hm0)
+    type_of_analysis:  spectral analysis
+    WMO_code:          100
+    valid_min:         0
+    valid_max:         3000
+    _ChunkSizes:       [12, 301, 241]</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'VHM0'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>latitude</span>: 601</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-c9df6e71-21e7-4029-bc11-8ad72002c582' class='xr-array-in' type='checkbox' checked><label for='section-c9df6e71-21e7-4029-bc11-8ad72002c582' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>2.31 2.32 2.32 2.33 2.33 2.34 2.34 ... 4.15 4.15 4.16 4.16 4.16 4.17</span></div><div class='xr-array-data'><pre>array([2.31, 2.32, 2.32, ..., 4.16, 4.16, 4.17], dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-653996f0-233d-41bb-aa35-3172455a6da4' class='xr-section-summary-in' type='checkbox'  checked><label for='section-653996f0-233d-41bb-aa35-3172455a6da4' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>latitude</span></div><div class='xr-var-dims'>(latitude)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>26.0 26.05 26.1 ... 55.9 55.95 56.0</div><input id='attrs-f29937c7-b4c7-49c6-8462-b8ddb9d27a47' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f29937c7-b4c7-49c6-8462-b8ddb9d27a47' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ca9902f0-51e6-4393-b15d-4d0098fc020c' class='xr-var-data-in' type='checkbox'><label for='data-ca9902f0-51e6-4393-b15d-4d0098fc020c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degrees_north</dd><dt><span>axis :</span></dt><dd>Y</dd><dt><span>unit_long :</span></dt><dd>Degrees North</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lat</dd><dt><span>_ChunkSizes :</span></dt><dd>601</dd></dl></div><div class='xr-var-data'><pre>array([26.  , 26.05, 26.1 , ..., 55.9 , 55.95, 56.  ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>longitude</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>-19.0</div><input id='attrs-ec6d967b-b24f-4c30-ad7f-d87122b79ba4' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-ec6d967b-b24f-4c30-ad7f-d87122b79ba4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ea15e586-91ef-4213-805d-3f80140c63d7' class='xr-var-data-in' type='checkbox'><label for='data-ea15e586-91ef-4213-805d-3f80140c63d7' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>longitude</dd><dt><span>long_name :</span></dt><dd>Longitude</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>unit_long :</span></dt><dd>Degrees East</dd><dt><span>step :</span></dt><dd>0.05f</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Lon</dd><dt><span>_ChunkSizes :</span></dt><dd>481</dd></dl></div><div class='xr-var-data'><pre>array(-19., dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2021-12-30T23:00:00</div><input id='attrs-7b4dfb7d-2c72-4462-a518-8ed2c4d53a13' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-7b4dfb7d-2c72-4462-a518-8ed2c4d53a13' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-97194076-fb23-4684-aaf5-36a1c0dbd634' class='xr-var-data-in' type='checkbox'><label for='data-97194076-fb23-4684-aaf5-36a1c0dbd634' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>axis :</span></dt><dd>T</dd><dt><span>long_name :</span></dt><dd>time</dd><dt><span>standard_name :</span></dt><dd>time</dd><dt><span>_CoordinateAxisType :</span></dt><dd>Time</dd><dt><span>_ChunkSizes :</span></dt><dd>24</dd></dl></div><div class='xr-var-data'><pre>array(&#x27;2021-12-30T23:00:00.000000000&#x27;, dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-b6305fee-ac20-4539-ac93-6056274b94b8' class='xr-section-summary-in' type='checkbox'  checked><label for='section-b6305fee-ac20-4539-ac93-6056274b94b8' class='xr-section-summary' >Attributes: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>sea_surface_wave_significant_height</dd><dt><span>long_name :</span></dt><dd>Spectral significant wave height (Hm0)</dd><dt><span>type_of_analysis :</span></dt><dd>spectral analysis</dd><dt><span>WMO_code :</span></dt><dd>100</dd><dt><span>valid_min :</span></dt><dd>0</dd><dt><span>valid_max :</span></dt><dd>3000</dd><dt><span>_ChunkSizes :</span></dt><dd>[12, 301, 241]</dd></dl></div></li></ul></div></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Checkeamos qué eje es cada coordenada</span>
+<span class="n">VHM0</span><span class="o">.</span><span class="n">get_axis_num</span><span class="p">(</span><span class="s2">&quot;longitude&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Podemos obtener los valores del data-array como un array de numpy utilizando el atributo <code>.values</code></p>
+
+</div>
+</div>
+</div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -17245,6 +17392,18 @@ Clase:  &lt;class &#39;numpy.ndarray&#39;&gt;
 
 </div>
 
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Más selecciones en el espacio de los índices...</p>
+
+</div>
+</div>
+</div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -17677,48 +17836,18 @@ Attributes:
 
 </div>
 
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Checkeamos qué eje es cada coordenada</span>
-<span class="n">VHM0</span><span class="o">.</span><span class="n">get_axis_num</span><span class="p">(</span><span class="s2">&quot;latitude&quot;</span><span class="p">)</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Otra forma de seleccionar es utilizando las etiquetas de los nombres de las coordenadas, este tipo de selección ocurre en el espacio de las etiquetas:</p>
 
-     </div>
 </div>
 </div>
 </div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>1</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
